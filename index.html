@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link rel="prefetch" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;display=swap">
-	<link rel="stylesheet" href="./index_files/A.reset.css,,qv==1677585938+swipebox.min.css,,qv==1677585938+slick-theme.css,,qv==1677585938+slick.css,,qv==1677585938+font-awesome.min.css,,qv==1677585938+style.min.css,,qv==1692720860+add.css,,qv==1691071777+jquery.fancybox.min.css,,qv==1677585938+s.css">	
+	<link rel="stylesheet" href="./index_files/1.css">	
 <style type="text/css">@-webkit-keyframes pulse {to{box-shadow:0 0 0 15px rgba(90, 153, 220, 0), inset 0 1px 0 #abcbe9}}</style>
 	<link rel="stylesheet" href="css/style.css">
 </head><!-- Memory: 4 mb, MySQL: 0,0184 s, 77 request(s), PHP: 0,0386 s, total: 0,0570 s, document retrieved from cache -->
@@ -33,14 +33,24 @@
 		<div class="location-wrap">
 			<div class="location-title">Населенный пункт</div>
 			<div class="location-button">
-				<select class="form-input form-input-clear">
-					<option>Москва</option>
-					<option>Москва</option>
-					<option>Москва</option>
-					<option>Москва</option>
-					<option>Москва</option>
-					<option>Москва</option>
-				</select>
+				<div class="frm-select-wrap js-popup-wrap js-popup-select">
+					<a href="" class="btn-popup-arrow js-btn-toggle"></a>
+					<div class="select-content-block js-popup-block">
+						<div class="select-content-inner">
+							<ul class="menu">
+								<li><a href="" class="btn-menu active">Москва</a></li>
+								<li><a href="" class="btn-menu">Санкт-Петербург</a></li>
+								<li><a href="" class="btn-menu">Владимир</a></li>
+								<li><a href="" class="btn-menu">Волгоград</a></li>
+								<li><a href="" class="btn-menu">Екатеринбург</a></li>
+								<li><a href="" class="btn-menu">Казань</a></li>
+								<li><a href="" class="btn-menu">Краснодар</a></li>
+								<li><a href="" class="btn-menu">Пермь</a></li>
+								<li><a href="" class="btn-menu">Сочи</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="info-wrap">
@@ -88,10 +98,18 @@
 						<img src="./img/icons/menu-location.svg" alt="">
 					</a>
 				</div>
-				<div class="action-wrap wrap-search">
-					<a href="" class="btn-action-ico">
+				<div class="action-wrap wrap-search js-popup-wrap">
+					<a href="" class="btn-action-ico js-btn-toggle">
 						<img src="./img/icons/menu-search.svg" alt="">
 					</a>
+					<div class="js-popup-block search-content-block">
+						<form action="/" class="frm-main-search">
+							<input type="text" class="form-input" placeholder="Поиск">
+							<button type="submit" class="btn-action-ico form-button">
+								<img src="./img/icons/menu-search.svg" alt="">
+							</button>
+						</form>
+					</div>
 				</div>
 				<div class="action-wrap wrap-fav">
 					<a href="" class="btn-action-ico">
@@ -115,14 +133,24 @@
 				<div class="location-inner-wrap">
 					<div class="location-title">Населенный пункт</div>
 					<div class="location-button">
-						<select class="form-input form-input-clear">
-							<option>Москва</option>
-							<option>Москва</option>
-							<option>Москва</option>
-							<option>Москва</option>
-							<option>Москва</option>
-							<option>Москва</option>
-						</select>
+						<div class="frm-select-wrap js-popup-wrap js-popup-select">
+							<a href="" class="btn-popup-arrow js-btn-toggle"></a>
+							<div class="select-content-block js-popup-block">
+								<div class="select-content-inner">
+									<ul class="menu">
+										<li><a href="" class="btn-menu active">Москва</a></li>
+										<li><a href="" class="btn-menu">Санкт-Петербург</a></li>
+										<li><a href="" class="btn-menu">Владимир</a></li>
+										<li><a href="" class="btn-menu">Волгоград</a></li>
+										<li><a href="" class="btn-menu">Екатеринбург</a></li>
+										<li><a href="" class="btn-menu">Казань</a></li>
+										<li><a href="" class="btn-menu">Краснодар</a></li>
+										<li><a href="" class="btn-menu">Пермь</a></li>
+										<li><a href="" class="btn-menu">Сочи</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="items-inner-wrap">
@@ -210,33 +238,222 @@
 					</div>
 				</div>
 				<div class="filter-inner-wrap">
+					
 					<div class="frm-row">
 						<div class="frm-field">
-							<select class="form-input" required>
-								<option selected disabled hidden value="">Цветы</option><!--placeholder-->
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-							</select>
+							<div class="frm-select-wrap js-popup-wrap js-popup-select">
+								<a href="" class="btn-popup js-btn-toggle">Цветы</a>
+								<div class="select-content-block js-popup-block">
+									<div class="select-content-inner">
+										<ul class="menu">
+											<li>
+												<a href="" class="btn-menu">Розы <span class="button-count">32</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Роза кустовая <span class="button-count">3</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Роза пионовидная <span class="button-count">1</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Анемоны <span class="button-count">0</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Гиацинт <span class="button-count">2</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Герберы <span class="button-count">5</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Гвоздики <span class="button-count">6</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Гортензия <span class="button-count">8</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Гипсофила <span class="button-count">7</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Ирис <span class="button-count">1</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Калла <span class="button-count">1</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Лаванда <span class="button-count">0</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Лилии <span class="button-count">1</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Лизиантусы <span class="button-count">1</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Ландыши <span class="button-count">0</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Маттиола <span class="button-count">3</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Нарцисс <span class="button-count">0</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Орхидея <span class="button-count">1</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Пионы <span class="button-count">1</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Подсолнух <span class="button-count">1</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Ромашки <span class="button-count">2</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Ранункулюс <span class="button-count">0</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Сирень <span class="button-count">0</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Тюльпаны <span class="button-count">4</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Тюльпаны пионовидные <span class="button-count">0</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Фрезия <span class="button-count">0</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Хризантемы <span class="button-count">16</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Эустома <span class="button-count">1</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="frm-field">
-							<select class="form-input" required>
-								<option selected disabled hidden value="">Цена</option><!--placeholder-->
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-							</select>
+							<div class="frm-select-wrap js-popup-wrap js-popup-select-many">
+								<a href="" class="btn-popup js-btn-toggle">Цвет</a>
+								<div class="select-content-block js-popup-block">
+									<div class="select-content-inner">
+										<ul class="menu menu-colors">
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: green;"></span>
+													<span class="button-title">Зеленый</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: orange;"></span>
+													<span class="button-title">Оранжевый</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: red;"></span>
+													<span class="button-title">Красный</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: blue;"></span>
+													<span class="button-title">Синий</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: green;"></span>
+													<span class="button-title">Зеленый</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: orange;"></span>
+													<span class="button-title">Оранжевый</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: red;"></span>
+													<span class="button-title">Красный</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: blue;"></span>
+													<span class="button-title">Синий</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: green;"></span>
+													<span class="button-title">Зеленый</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: orange;"></span>
+													<span class="button-title">Оранжевый</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: red;"></span>
+													<span class="button-title">Красный</span>
+												</a>
+											</li>
+											<li>
+												<a href="" class="btn-menu-color">
+													<span class="button-ico" style="background-color: blue;"></span>
+													<span class="button-title">Синий</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="frm-field">
-							<select class="form-input" required>
-								<option selected disabled hidden value="">Повод</option><!--placeholder-->
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-								<option>Пункт списка</option>
-							</select>
+							<div class="frm-select-wrap select-placeholder js-popup-wrap js-popup-select">
+								<a href="" class="btn-popup js-btn-toggle">Повод</a>
+								<div class="select-content-block js-popup-block">
+									<div class="select-content-inner">
+										<ul class="menu">
+											<li>
+												<a href="" class="btn-menu">День рождения<span class="button-count">32</span></a>
+											</li>
+											<li>
+												<a href="" class="btn-menu">Юбилей <span class="button-count">3</span></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="frm-field">
+							<div class="frm-select-wrap select-placeholder js-popup-wrap js-popup-select">
+								<a href="" class="btn-popup js-btn-toggle">Цена</a>
+								<div class="select-content-block js-popup-block">
+									<div class="select-content-inner">
+										<div class="frm-field-range">
+											<div class="field-range">
+												<input type="text" class="form-input" placeholder="от">
+											</div>
+											<div class="field-range">
+												<input type="text" class="form-input" placeholder="до">
+											</div>
+											<div class="field-button">
+												<button type="submit" class="btn">Найти</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 						<!--<div class="frm-field">
 							<button type="submit" class="btn">Найти</button>
@@ -3098,6 +3315,160 @@
 	</div>
 </div>
 <!--/catalog-slider-box-->
+	
+	
+			<!--reviews-slider-box-->
+			<div class="reviews-slider-box">
+				<div class="title-inner-wrap">
+					<h2 class="h1-title">Отзывы наших покупателей</h2>
+				</div>
+				<div class="slider-inner-wrap">
+					<div class="slider-wrap">
+						<div class="slider">
+							<!--sl-wrap-->
+							<div class="sl-wrap">
+								<div class="item-tile-review">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo photo-cover">
+											<img src="./img/review.jpg" alt="">
+										</div>
+									</div>
+									<div class="tile-info-wrap">
+										<div class="tile-info-inner">
+											<div class="elm-rates" data-rate="4">
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+											</div>
+											<div class="tile-title">Мередова Елена Григорьевна</div>
+											<p>Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо  - вы тот случай, когда точно знаешь куда возвращаться за цветочками.  </p>
+										</div>
+										<div class="tile-info-desc">Отзыв к букету:  <span class="text-att">Розы 80 см</span></div>
+									</div>
+								</div>
+							</div>
+							<!--/sl-wrap-->
+							<!--sl-wrap-->
+							<div class="sl-wrap">
+								<div class="item-tile-review">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo photo-cover">
+											<img src="./img/review.jpg" alt="">
+										</div>
+									</div>
+									<div class="tile-info-wrap">
+										<div class="tile-info-inner">
+											<div class="elm-rates" data-rate="4">
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+											</div>
+											<div class="tile-title">Мередова Елена Григорьевна</div>
+											<p>Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо  - вы тот случай, когда точно знаешь куда возвращаться за цветочками.  </p>
+										</div>
+										<div class="tile-info-desc">Отзыв к букету:  <span class="text-att">Розы 80 см</span></div>
+									</div>
+								</div>
+							</div>
+							<!--/sl-wrap-->
+							<!--sl-wrap-->
+							<div class="sl-wrap">
+								<div class="item-tile-review">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo photo-cover">
+											<img src="./img/review.jpg" alt="">
+										</div>
+									</div>
+									<div class="tile-info-wrap">
+										<div class="tile-info-inner">
+											<div class="elm-rates" data-rate="4">
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+											</div>
+											<div class="tile-title">Мередова Елена Григорьевна</div>
+											<p>Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо  - вы тот случай, когда точно знаешь куда возвращаться за цветочками.  </p>
+										</div>
+										<div class="tile-info-desc">Отзыв к букету:  <span class="text-att">Розы 80 см</span></div>
+									</div>
+								</div>
+							</div>
+							<!--/sl-wrap-->
+							<!--sl-wrap-->
+							<div class="sl-wrap">
+								<div class="item-tile-review">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo photo-cover">
+											<img src="./img/review.jpg" alt="">
+										</div>
+									</div>
+									<div class="tile-info-wrap">
+										<div class="tile-info-inner">
+											<div class="elm-rates" data-rate="4">
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+											</div>
+											<div class="tile-title">Мередова Елена Григорьевна</div>
+											<p>Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо  - вы тот случай, когда точно знаешь куда возвращаться за цветочками.  </p>
+										</div>
+										<div class="tile-info-desc">Отзыв к букету:  <span class="text-att">Розы 80 см</span></div>
+									</div>
+								</div>
+							</div>
+							<!--/sl-wrap-->
+							<!--sl-wrap-->
+							<div class="sl-wrap">
+								<div class="item-tile-review">
+									<div class="tile-photo-wrap">
+										<div class="tile-photo photo-cover">
+											<img src="./img/review.jpg" alt="">
+										</div>
+									</div>
+									<div class="tile-info-wrap">
+										<div class="tile-info-inner">
+											<div class="elm-rates" data-rate="4">
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+												<div class="elm-rate"></div>
+											</div>
+											<div class="tile-title">Мередова Елена Григорьевна</div>
+											<p>Хочу выразить свою благодарность коллективу, за великолепную работу и профессионализм! Заказываю уже 3 раз и каждый раз се полный восторг! Букеты красивые, цветочки свежие, стоят долго! Заказывала и готовые и собирал по своему желанию- все чудесно! Спасибо  - вы тот случай, когда точно знаешь куда возвращаться за цветочками.  </p>
+										</div>
+										<div class="tile-info-desc">Отзыв к букету:  <span class="text-att">Розы 80 см</span></div>
+									</div>
+								</div>
+							</div>
+							<!--/sl-wrap-->
+						</div>
+					</div>
+				</div>
+				<div class="more-wrap">
+					<a href="" class="btn button-light">
+						<span class="button-title">Все отзывы</span>
+						<span class="button-ico">
+							<img src="./img/icons/arrow-button.svg" alt="">
+						</span>
+					</a>
+				</div>
+			</div>
+			<!--/reviews-slider-box-->
+			
+			
+			
+			
+			
+			
 			<!--categories-box -->
 <div class="categories-box section-main">
 	<!--title-actions-box-->
@@ -3782,8 +4153,38 @@
 </div>
 
 		<script src="./index_files/jquery-1.11.0.min.js,qv=1677585938.pagespeed.jm.VDIv7VBTRR.js"></script><script src="./index_files/jquery-ui-1.10.4.custom.min.js,qv=1677585938.pagespeed.jm.4ozrlshi1D.js"></script><script src="./index_files/jquery.swipebox.min.js,qv==1677585938+jquery.swipebox.min.js,qv==1677585938.pagespeed.jc.Euj1Q6NpMp.js"></script><script>eval(mod_pagespeed_qQU4ZLU9Ep);</script><script>eval(mod_pagespeed_qQU4ZLU9Ep);</script><script src="./index_files/scripts.min.js,qv=1677585938.pagespeed.jm.3qaqjEPC7i.js"></script><script src="./index_files/scripts.js,qv=1678892349.pagespeed.jm.c8vSG7uKfV.js"></script><script src="./index_files/jquery.inputmask.min.js"></script><script src="./index_files/datepicker.min.js,qv==1677585938+main.js,qv==1677585938.pagespeed.jc.i34_YDDdOc.js"></script><script>eval(mod_pagespeed_Xg4oIje96Z);</script><script>eval(mod_pagespeed_qyjluNDg2c);</script><script src="./index_files/slick.min.js,qv=1677585938.pagespeed.jm.SBrD-JNcgF.js"></script>
-
-
+		
+		<script>
+			$(window).on('load', function () {
+				//reviews-slider-box
+				if (!!$('.reviews-slider-box').offset()) {
+					$('.reviews-slider-box .slider').slick({
+						dots: false,
+						slidesToShow: 1,
+						variableWidth: false,
+						infinite: true,
+						adaptiveHeight: true,
+						rows: 1,
+						swipeToSlide: true,
+						autoplay: false,
+						autoplaySpeed: 5000,
+						prevArrow: '<span class="btn-action-ico ico-arrow ico-arrow-second ico-arrow-prev"></span>',
+						nextArrow: '<span class="btn-action-ico ico-arrow ico-arrow-second ico-arrow-next"></span>',
+						responsive: [
+							{
+								breakpoint: 1024,
+								settings: {
+									slidesToShow: 1,
+									dots: true,
+									prevArrow: false,
+									nextArrow: false,
+								}
+							},
+						]
+					});
+				}
+			})
+		</script>
 
 
 <!-- Yandex.Metrika counter -->
