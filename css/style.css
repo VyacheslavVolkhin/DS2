@@ -403,7 +403,7 @@
 }
 @media (max-width: 639px) {
   .header-panel-box .frm-field {
-    width: 33.33%;
+    width: 50%;
   }
   .header-panel-box .item-wrap {
     width: 90px;
